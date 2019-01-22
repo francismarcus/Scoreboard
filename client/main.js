@@ -6,6 +6,7 @@ import { Tracker } from "meteor/tracker";
 import { Players } from "./../imports/api/players";
 import Title from "./../imports/components/title";
 import AddPlayer from "./../imports/components/addplayer";
+import Player from "./../imports/components/player";
 
 Meteor.startup(() => {
   Tracker.autorun(() => {
@@ -13,7 +14,8 @@ Meteor.startup(() => {
 
     let Hello = (
       <div>
-        <Title title="Scoreboard"/>
+        <Title title="Scoreboard" />
+        <Player />
         <AddPlayer />
       </div>
     );
