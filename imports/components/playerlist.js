@@ -2,6 +2,7 @@ import React from "react";
 import Player from "./player";
 import FlipMove from "react-flip-move";
 
+import styles from './item.css'
 export default class PlayerList extends React.Component {
   renderPlayers() {
     if (this.props.players.length === 0) {
